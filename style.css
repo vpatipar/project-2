@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.body{
+    height: 1600px;
+    background-image: radial-gradient(#6FFF86 5%, rgb(255, 255, 255) 75%);
+}
+
+.bodyrender{
+    height: 400px;
+    background-image: radial-gradient(#6FFF86 5%, rgb(255, 255, 255) 75%);
+}
+
+#follow {
+    size: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat{
+    width: 40%;
+    height: 200px;
+    float: left;
+    font-family: 'avenir-medium', sans-serif;
+    font-size: 80px;
+    color: #FF005C;
+    padding: 20px;
+    justify-content: left;
+    display: flex;
+    z-index: 2;
+}
+
+.hello{
+    width: 40%;
+    height: 200px;
+    float: right;
+    font-family: 'avenir-medium', sans-serif;
+    font-size: 40px;
+    color: #FF005C;
+    justify-content: right;
+    padding: 20px;
+    display: flex;
+    z-index: 2;
+}
+
+.blank{
+    width: 15%;
+    height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+    z-index: 2;
+}
+
+.menu{
+    background-color: transparent;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.menuitems{
+    height: 90%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: transparent;
+    margin-right: 20px;
+    font-size: 40px;
+    font-family: 'avenir-medium', sans-serif;
+    color: #FF005C;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    transition: flex-grow .7s;
+}
+
+.menuitems:hover{
+    height: 90%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: transparent;
+    margin-right: 20px;
+    font-size: 50px;
+    font-family: 'avenir-medium', sans-serif;
+    color: #FF005C;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    transition: flex-grow .7s;
+}
+
+.menuitems2 {
+    height: 90%;
+    flex-grow: 5;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color: white;
+    margin-right: 20px;
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(255, 15, 127), rgb(255, 201, 248), rgb(255, 14, 94));
+    -webkit-color-clip: text;
+    -webkit-text-fill-color: white;
+
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    transition: flex-grow .7s;
+}
+
+.menuitems3 {
+    height: 90%;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color: white;
+    margin-right: 20px;
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(255, 15, 127), rgb(255, 201, 248), rgb(255, 14, 94));
+    /* -webkit-background-clip: text; */
+    -webkit-color-clip: text;
+    -webkit-text-fill-color: white;
+
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    transition: flex-grow .7s;
+}
+
+.marquee {
+    height: 210px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;  
+    border-top: 3px solid #FF005C;
+    border-bottom: 3px solid #FF005C;
+    justify-content: space-around;
+  }
+  
+  
+  /* would need to be adjusted depending on time */
+  .marquee .marqueeone{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear infinite
+  }
+  
+  .marquee .marqueetwo{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 1.5s infinite 
+  }
+  
+  .marquee .marqueethree{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 3s infinite
+  }
+  
+  .marquee .marqueefour{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 4.5s infinite
+  }
+  .marquee .marqueefive{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 4.5s infinite
+  }
+
+  .marquee .marqueesix{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 6s infinite
+  }
+
+  .marquee .marqueeseven{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 7.5s infinite
+  }
+
+  .marquee .marqueeeight{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 9s infinite
+  }
+
+  
+  
+  /* even out the elements */
+  .marquee div {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .marquee:hover div {
+      font-size: 155px;
+    animation-play-state: paused;
+  }
+  
+  /* add delay at the end of animation so you dont start while another div is going */
+  @keyframes marquee {
+    0% { left: 100%; }
+    50% { left: -100%; }
+    100% {left: -100%}
+  }
+
+  .marqueebelow {
+    height: 210px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;  
+    border-bottom: 3px solid #FF005C;
+    justify-content: space-around;
+  }
+
+  .marqueebelow .marqueeone{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear infinite
+  }
+  
+  .marqueebelow .marqueetwo{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 1.5s infinite 
+  }
+  
+  .marqueebelow .marqueethree{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 3s infinite
+  }
+  
+  .marqueebelow .marqueefour{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 4.5s infinite
+  }
+  .marqueebelow .marqueefive{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 4.5s infinite
+  }
+
+  .marqueebelow .marqueesix{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 6s infinite
+  }
+
+  .marqueebelow .marqueeseven{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 7.5s infinite
+  }
+
+  .marqueebelow .marqueeeight{
+    font-size: 150px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    animation: marquee 9s linear 9s infinite
+  }
+
+  
+  
+  /* even out the elements */
+  .marqueebelow div {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .marqueebelow:hover div {
+      font-size: 155px;
+    animation-play-state: paused;
+  }
+  
+  /* add delay at the end of animation so you dont start while another div is going */
+  @keyframes marquee {
+    0% { left: 100%; }
+    50% { left: -100%; }
+    100% {left: -100%}
+  }
+
+  .description{
+    margin-top: 100px;
+    padding: auto;
+    font-size: 45px;
+    font-family:'avenir-book', sans-serif;
+    color: #FF005C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* EXPLORE PAGE CONTENT */
+
+  .explorebox{
+      width: 80%;
+      height: 400px;
+      box-sizing: border-box;
+      border-radius: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .explorebox img{
+    width: 100%;
+    height: 400px;
+      border-radius: 20px;
+      border: 3px solid #FF005C;
+      object-fit: cover;
+  }
+
+  .grow{
+    width: 80%;
+    height: 1200px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+      -webkit-transition: ease-in-out 0.3s;
+      transition: ease-in-out 0.3s;
+      
+  }
+
+  .grow img{
+    width: 100%;
+    height: 100%;
+      border-radius: 20px;
+      border: 3px solid #FF005C;
+      object-fit: cover;
+  }
+
+  .grow::after{
+    width: 80%;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+      -webkit-transition: ease 0.3s;
+      transition: ease 0.3s;
+  }
+
+  .grow::after img{
+    width: 100%;
+    height: 100%;
+      border-radius: 20px;
+      border: 3px solid #FF005C;
+      object-fit: cover;
+  }
+
+  .renderview{
+      height: auto;
+      width: 80%;
+      border-radius: 20px;
+      border: 3px solid #FF005C;
+      object-fit: cover;
+  }
+
+  /* ABOUT PAGE CONTENT */
+
+.videocontainer{
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p{
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: auto;
+    font-size: 40px;
+    font-family:'avenir', sans-serif;
+    color: #FF005C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* CONTACT PAGE CONTENT */
+.contactlist{
+  padding: auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.call{
+  margin-top: 100px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: auto;
+  font-size: 70px;
+  font-family:'avenir-roman', sans-serif;
+  color: #FF005C;
+  text-decoration: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* MODEL 1, 2 PAGE CONTENT */
+.sketchfab-embed-wrapper{
+  margin: auto;
+  height: 1000px;
+  width: 2000px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sketchfab-embed-wrapper iframe{
+  border-radius: 20px;
+  border: 3px solid #FF005C;
+  object-fit: cover;
+}
+
